@@ -55,7 +55,7 @@ MainTab:AddToggle({
                         if isMurderer then
                             highlight.FillColor = Color3.fromRGB(255, 0, 0)
                         elseif isSheriff then
-                            highlight.FillColor = Color3.fromRGB(0, 蓝, 255)
+                            highlight.FillColor = Color3.fromRGB(0, 0, 255)
                         else
                             highlight.FillColor = Color3.fromRGB(0, 255, 0)
                         end
