@@ -6,14 +6,14 @@ local function loadExternalUI()
    end)
    
    if success and result then
-       local runScript = loadstring(result)
+       local runScript, err = loadstring(result)
        if runScript then
-           runScript()
+           task.spawn(runScript)
        else
-           warn("Compile error")
+           warn("Compile error: " .. tostring(err))
        end
    else
-       warn("Connection error")
+       warn("Connection error to GitHub")
    end
 end
 
